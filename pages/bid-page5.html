@@ -56,15 +56,14 @@
         </nav>
     </header>
     <div class="container">
-         <div class="images_display"> <!-- The several images -->
+        <div class="images_display"> <!-- The several images -->
             <div class="slider">
                 <img src="/img/auction-pictures/wardrobe(2).png" alt="homeitems3" class="homeitems3">
+                <div class="chev">
+                    <button id="change"><i class="fa-solid fa-chevron-left" onclick="prev5()"></i></button>
+                    <button id="change"><i class="fa-solid fa-chevron-right" onclick="next5()"></i></button>
+                </div>
             </div>
-            <!-- <button class="btn" onclick="prev()">Prev</button>
-            <button class="btn" onclick="next()">Next</button> -->
-
-            <i class="fa-solid fa-arrow-left fa-2xl" onclick="prev5()"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa-solid fa-arrow-right fa-2xl" onclick="next5()"></i>
         </div>
 
         <div class="bid_details">   <!-- Details of bidded item and bid placement -->
@@ -87,7 +86,7 @@
                 </div>
             </div>
             <div class="new">
-                <h2>Time left for bid: <span class="timercolor" id="timer5"></span></h2>
+                <h2>Time left for bid: <br> <span class="timercolor" id="timer5"></span></h2>
             </div>
 
             <div class="description">

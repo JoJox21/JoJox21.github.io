@@ -55,16 +55,16 @@
             </ul> 
         </nav>
     </header>
+
     <div class="container">
          <div class="images_display"> <!-- The several images -->
             <div class="slider">
                 <img src="/img/auction-pictures/Benz1.jpg" alt="Benz1" class="mbenz">
+                <div class="chev">
+                    <button id="change"><i class="fa-solid fa-chevron-left" onclick="prev()"></i></button>
+                    <button id="change"><i class="fa-solid fa-chevron-right" onclick="next()"></i></button>
+                </div>
             </div>
-            <!-- <button class="btn" onclick="prev()">Prev</button>
-            <button class="btn" onclick="next()">Next</button> -->
-
-            <i class="fa-solid fa-arrow-left fa-2xl" onclick="prev()"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="fa-solid fa-arrow-right fa-2xl" onclick="next()"></i>
         </div>
 
         <div class="bid_details">   <!-- Details of bidded item and bid placement -->
@@ -87,7 +87,7 @@
                 </div>
             </div>
             <div class="new">
-                <h2>Time left for bid: <span class="timercolor" id="timer"></span></h2>
+                <h2>Time left for bid: <br> <span class="timercolor" id="timer"></span></h2>
             </div>
 
             <div class="description">
@@ -124,7 +124,7 @@
                     <hr>
                     <br>
                     <ul>
-                        <li><a href="#">about the platform</a></li>
+                        <li><a href="#">About the platform</a></li>
                         <li><a href="#">Available services</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                     </ul>
@@ -183,10 +183,7 @@
     </footer>
 
     <script src="/js/script2.js"></script>
-    <!-- <script src="/js/script3.js"></script> -->
     <script src="/js/timer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
-    <!-- <script src="sweetalert2.min.js"></script> -->
-    <!-- <script src="/asset/js/test.js"></script> -->
 </body>
 </html>
