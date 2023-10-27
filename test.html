@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="home">₦5250000</h2>
+    <input type="text" id="joke">
+    <p id="time"></p>
+</body>
+</html>
+
+<script>
+    // var hope = 20;
+    // var home =document.getElementById("home");
+
+    // var homeText = home.textContent.replace(/[^\d.]/g, '')
+    // var homeValue = parseInt(homeText)
+
+    // const sum = hope + homeValue;
+    // const newsum = sum.toLocaleString()
+    
+    // const joke = document.getElementById("joke")
+
+    // joke.addEventListener('input', function() {
+    //     // Remove any non-digit characters
+    //     let inputValue = joke.value.replace(/\D/g, '');
+
+    //     // Add commas as thousands separators
+    //     joke.value = inputValue.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    // });
+
+    function pluralize(count, singular, plural) {
+  if (count === 1) {
+    return count + ' ' + singular;
+  } else {
+    return count + ' ' + plural;
+  }
+}
+
+// Example usage:
+console.log(pluralize(1, 'day', 'days')); // Outputs: "1 day"
+console.log(pluralize(0, 'day', 'days')); // Outputs: "0 days"
+console.log(pluralize(2, 'day', 'days')); // Outputs: "2 days"
+
+</script>
