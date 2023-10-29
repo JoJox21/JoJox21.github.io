@@ -68,7 +68,7 @@
         </div>
         <div class="logreg-box">
             <div class="form-box login">
-                <form id="submit" action="/pages/auction-page-all-items.html">
+                <form id="submit" action="/">
 
                     <div class="content2">
                         <h2 class="main1" style="color: #9b9595;"></i>Sterling Auction Hub</h2>
@@ -80,16 +80,18 @@
                     </div>
 
                     <h2>Sign In</h2>
-
+                
                     <div class="input-box input-control">
                         <span class="icon"><i class='bx bxs-user' ></i></span>
-                        <input type="text" id="username" required>
+                        <input type="text" id="username">
+                        <div class="error"></div>
                         <label>Username</label>
                     </div>
 
                     <div class="input-box input-control">
                         <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                        <input type="password" id="password" required>
+                        <input type="password" id="password">
+                        <div class="error"></div>
                         <label>Password</label>
                     </div>
 

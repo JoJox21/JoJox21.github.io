@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sterling Bank Auction Page</title>
-    <link rel="icon" href="./asset/img/" type="image/x-icon">
+    <link rel="icon" href="/asset/img/" type="image/x-icon">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css">
@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <!-- <a href="#" class="logo">Logo</a> -->
-        <a href="/index.html">
+        <a href="../index.html">
             <img src="/img/SterlingLogo.svg" class="logo"> 
         </a>
         
@@ -31,7 +31,7 @@
     
         <nav class="navbar">
             <ul>
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="#">Pages +</a>
                     <ul>
                         <li><a href="#">Blogs</a></li>
@@ -44,7 +44,7 @@
                         </li>
                     </ul>
                 </li>
-                <li><a href="./pages/faq.html" class="active">FAQs</a></li>
+                <li><a href="/pages/faq.html" class="active">FAQs</a></li>
                 <li><a href="#">Categories +</a>
                     <ul>
                         <li><a href="/pages/auction-page-all-items.html">All</a></li>
@@ -57,13 +57,14 @@
             </ul> 
         </nav>
     </header>
+
     <div class="container">
-        <div class="images_display"> <!-- The several images -->
+         <div class="images_display"> <!-- The several images -->
             <div class="slider">
-                <img src="/img/auction-pictures/laptop-power-bank.png" alt="power-bank" class="electronics3">
+                <img src="/img/auction-pictures/gla1.png" alt="Benz_GLA" class="mbenz2">
                 <div class="chev">
-                    <button id="change"><i class="fa-solid fa-chevron-left" onclick="prev8()"></i></button>
-                    <button id="change"><i class="fa-solid fa-chevron-right" onclick="next8()"></i></button>
+                    <button id="change"><i class="fa-solid fa-chevron-left" onclick="prev10()"></i></button>
+                    <button id="change"><i class="fa-solid fa-chevron-right" onclick="next10()"></i></button>
                 </div>
             </div>
         </div>
@@ -71,34 +72,34 @@
         <div class="bid_details">   <!-- Details of bidded item and bid placement -->
             <div class="details">
                 <h2>Item type</h2>
-                <h3>Electronics</h3>
+                <h3>Cars</h3>
             </div>
             <div class="details2">    <!-- Details of bidded item and bid placement -->
                 <div class="another_details">
-                    <h3>Items</h3>
-                    <p>Laptop Power Bank</p>
+                    <h3>Brand</h3>
+                    <p>Mercedes Benz</p>
                 </div>
                 <div class="another_details">
-                    <h3>Condition</h3>
-                    <p>Working</p>
+                    <h3>Year</h3>
+                    <p>2018</p>
                 </div>
                 <div class="another_details">
-                    <h3>Location</h3>
-                    <p>Okada Branch</p>
+                    <h3>Mileage</h3>
+                    <p>43,577km</p>
                 </div>
             </div>
             <div class="new">
-                <h2>Time left for bid: <br> <span class="timercolor" id="timer8"></span></h2>
+                <h2>Time left for bid: <br> <span class="timercolor" id="timer10"></span></h2>
             </div>
 
             <div class="description">
                 <h4>Current Bid<span class ='testing' style="font-size: 10px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Reserve has not been met</span></h4>
-                <h2 class="rprice">₦50,000</h2>
-                
+                <h2 class="rprice">₦19,000,000</h2>
+            
                 <p id = "bid_count"></p>
                 <input type="text" class="input-field"> <button class="bid_button" type="submit">Place bid</button>
                 
-                <p>Enter <span class="rprice2">₦50,001</span> or more</p>
+                <p>Enter <span class="rprice2">₦19,000,001</span> or more</p>
                 
                 <p class="update"><i class="fa-solid fa-circle-exclamation" style="color: #202122;"></i>
                     NOTE: Delivery logistics and cost is to be arranged by bidder</p>                                                                                                                                                                               
@@ -125,7 +126,7 @@
                     <hr>
                     <br>
                     <ul>
-                        <li><a href="#">about the platform</a></li>
+                        <li><a href="#">About the platform</a></li>
                         <li><a href="#">Available services</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                     </ul>
@@ -186,7 +187,5 @@
     <script src="/js/script2.js"></script>
     <script src="/js/timer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
-    <!-- <script src="sweetalert2.min.js"></script> -->
-    <!-- <script src="/asset/js/test.js"></script> -->
 </body>
 </html>

@@ -1,5 +1,5 @@
 const username = document.getElementById('username');
-const form = document.getElementById('form');
+const form = document.getElementById('submit');
 const password = document.getElementById('password');
 
 // submit the form
@@ -35,21 +35,26 @@ const setError = (element, message) =>{
     const passwordValue = password.value.trim();
 
     if(usernameValue === ''){ //check if usernameValue is empty
-        setError(username, 'username is required');
+        setError(username, 'Username is required');
     }else{
         setSuccess(username);
     }
 
-    if(passwordValue === ''){ //check if emailValue is empty
+    if(passwordValue === ''){ //check if passwordValue is empty
         setError(password, 'Password is required');
-    }else if(passwordValue.length <8){ //check if email is valid
+    }else if(passwordValue.length <8){ //check if password is less than 8 characters
         setError(password, 'Password must be atleast 8 characters');
     }else{
         setSuccess(password);
     }
 
     if(usernameValue && passwordValue){
-    window.location ='/pages/auction-page-all-items.html'
+        if(passwordValue.length<8){
+            setError(password, 'Password must be atleast 8 characters');
+        }
+        else{
+            window.location ='/pages/auction-page-all-items.html'
+        }
     }
  }
 

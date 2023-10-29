@@ -168,6 +168,12 @@ body{
     margin-right: 3px;
 }
 
+.input-control .error{
+    color: #ff3860;
+    font-size: 14px;
+    height: 13px;
+}
+
 .remember-forgot a{
     color: #e4e4e4;
     text-decoration: none;

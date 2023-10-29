@@ -210,6 +210,27 @@ const Mikano = () =>{
 	return slider9.setAttribute('src', "/img/auction-pictures/"+elect4[q]);	
 }
 
+let slider10 = document.querySelector('.mbenz2');
+let mBenz = ['gla1.png', 'gla2.png', 'gla3.png', 'gla4.png','gla5.png'];
+let r = 0;
+
+const next10 = () =>{
+    if(r >= mBenz.length-1) r = -1;
+    r++;
+    return mBenzGLA();			 
+}
+
+const prev10 = () => {
+	if(r <= 0) r = mBenz.length;	
+	r--;
+	return mBenzGLA();			 
+}
+
+
+const mBenzGLA = () =>{
+	return slider10.setAttribute('src', "/img/auction-pictures/"+mBenz[r]);	
+}
+
 const update = () => {
     const inputValue = input.value.replace(/\D/g, "")
     input.value = inputValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",")

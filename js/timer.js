@@ -233,9 +233,35 @@ let x = setInterval(function(){
 
     document.getElementById("timer9").innerHTML = days+daysText+ ' ' + hours +hoursText +' '+ minutes +minutesText +' ' + seconds +secondsText + '.';;
 
-    if (differ < 0) {
+    if (diff9 < 0) {
         clearInterval(x);
         document.getElementById("timer9").innerHTML = "BID FOR THIS ITEM IS OVER";
+        document.querySelector(".input-field").disabled = true;
+        document.querySelector(".bid_button").disabled = true;     
+    }
+}, 1000);
+
+let deadline10 = new Date("October 30, 2023 23:59:59").getTime()
+let y = setInterval(function(){
+    let now = new Date().getTime();
+
+    let diff10 = deadline10 - now;
+    
+    let days = Math.floor(diff10 / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((diff10 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((diff10 % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((diff10 % (1000 * 60)) / 1000);
+
+    let daysText = days === 1 ? 'day' : 'days';
+    let hoursText = hours === 1 ? 'hour' : 'hours';
+    let minutesText = minutes === 1 ? 'minute' : 'minutes';
+    let secondsText = seconds === 1 ? 'second' : 'seconds';
+
+    document.getElementById("timer10").innerHTML = days+daysText+ ' ' + hours +hoursText +' '+ minutes +minutesText +' ' + seconds +secondsText + '.';;
+
+    if (diff10 < 0) {
+        clearInterval(y);
+        document.getElementById("timer10").innerHTML = "BID FOR THIS ITEM IS OVER";
         document.querySelector(".input-field").disabled = true;
         document.querySelector(".bid_button").disabled = true;     
     }
