@@ -12,7 +12,7 @@ body{
     margin-top: 5rem;
 }
 
-.container {
+.containment {
     margin-top: 6.8rem;
     display: flex;
     flex-wrap: wrap;

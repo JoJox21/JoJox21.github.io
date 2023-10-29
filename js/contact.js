@@ -43,14 +43,14 @@ const setError = (element, message) =>{
     if(passwordValue === ''){ //check if passwordValue is empty
         setError(password, 'Password is required');
     }else if(passwordValue.length <8){ //check if password is less than 8 characters
-        setError(password, 'Password must be atleast 8 characters');
+        setError(password, 'Password must be at least 8 characters');
     }else{
         setSuccess(password);
     }
 
     if(usernameValue && passwordValue){
         if(passwordValue.length<8){
-            setError(password, 'Password must be atleast 8 characters');
+            setError(password, 'Password must be at least 8 characters');
         }
         else{
             window.location ='/pages/auction-page-all-items.html'
