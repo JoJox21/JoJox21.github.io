@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Status Progress Bar</title>
+    <link rel="stylesheet" href="/css/auctionstatus.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+
+    <!-- UniIcon CDN Link  -->
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- <a href="#" class="logo">Logo</a> -->
+        <a href="../index.html">
+            <img src="../img/SterlingLogo.svg" class="logo"> 
+        </a>
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Pages +</a>
+                    <ul>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#" class="active">Services +</a>
+                            <ul>
+                                <li><a href="/pages/auctionstatus.html" class="active">Auction Status</a></li>
+                                <li><a href="/pages/review.html">Review</a></li>
+                                <li><a href="#">Inspection</a></li>
+                            </ul> 
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="./faq.html">FAQs</a></li>
+                <li><a href="#">Categories +</a>
+                    <ul>
+                        <li><a href="./auction-page-all-items.html">All</a></li>
+                        <li><a href="./auction-page-vehicles.html">Cars</a></li>
+                        <li><a href="./auction-page-furnitures.html">Furnitures</a></li>
+                        <li><a href="./auctions-page-electronics.html">Electronics</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul> 
+        </nav>
+    </header>
+
+    <div class="main">
+
+        <div class="head">
+            <p class="head_1">Auction Hub Bid Status <span>Progress Bar</span></p>
+            <p class="head_2">Track the progress of your bid</p>
+        </div>
+
+        <!-- Display Text -->
+        <p id="displayText"></p>
+
+        <!-- Display Final Print -->
+        <div class="close">
+            <p id="final-imagery" hidden><img src="./img/clap.gif" width="8%"></p>
+            <p id="displayPrint"></p>
+            <p id="final-display"></p>
+            <p id="final-image" hidden><img src="./img/GoldPlaque.png" width="20%"></p>
+        </div>
+
+
+        <ul class="unordered-list">
+            <li>
+                <i class="icon uil uil-capture"></i>
+                <div class="progress one">
+                    <p>1</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Add To Bid</p>
+            </li>
+
+            <li>
+                <i class="icon uil uil-clipboard-notes"></i>
+                <div class="progress two">
+                    <p>2</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Bid is still Open</p>
+            </li>
+
+            <li>
+                <i class="icon uil uil-credit-card"></i>
+                <div class="progress three">
+                    <p>3</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Bid Closed</p>
+            </li>
+
+            <li>
+                <i class="icon uil uil-exchange"></i>
+                <div class="progress four">
+                    <p>4</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Make Payment</p>
+            </li>
+
+            <li>
+                <i class="icon uil uil-map-marker"></i>
+                <div class="progress five">
+                    <p>5</p>
+                    <i class="uil uil-check"></i>
+                </div>
+                <p class="text">Claim item</p>
+            </li>
+        </ul>
+
+        <div class="search-right">
+            <p class="recent-bids">Bid History (Bankwide)</p>
+            <form action="#" class="search-bar1">
+                <input type="text" placeholder="Search...">
+                <button type="Submit"><i class='bx bx-search'></i></button>
+            </form>
+        </div>
+
+        <table class="content-table">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Item</th>
+                    <th>Date Placed</th>
+                    <th>Bid</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mobolaji Ibine</td>
+                    <td>Lexus ES350 - 2008</td>
+                    <td><date>31/10/2023</date></td>
+                    <td>₦3,950,000</td>
+                    <td>Open</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Oghenedoro Ohwojivwiogor</td>
+                    <td>Divoom Home Theatre</td>
+                    <td><date>26/10/2023</date></td>
+                    <td>₦170,000</td>
+                    <td>Open</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Joshua Hungevu</td>
+                    <td>Hisense Air Condition</td>
+                    <td><date>23/10/2023</date></td>
+                    <td>₦62,000</td>
+                    <td>Open</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>John Dada</td>
+                    <td>LG 780Watts Home Theatre</td>
+                    <td><date>18/10/2023</date></td>
+                    <td>₦30,000</td>
+                    <td>Open</td>
+                </tr>
+                <tr class="active-row">
+                    <td>5</td>
+                    <td>Damian Adikwu</td>
+                    <td>Benz C Series - 2012</td>
+                    <td><date>10/10/2023</date></td>
+                    <td>₦5,250,000</td>
+                    <td>Closed</td>
+                </tr>
+                <tr class="active-row">
+                    <td>6</td>
+                    <td>Endurance Benson</td>
+                    <td>Furniture items</td>
+                    <td><date>11/10/2023</date></td>
+                    <td>₦285,000</td>
+                    <td>Closed</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Sterling Auction Hub</h4>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li><a href="#">about the platform</a></li>
+                        <li><a href="#">Available services</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                    <br>
+                    <!-- <hr> -->
+                    <br>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <hr>
+                    <br>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Bid status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Enquiry and Resolution</h4>
+                    <hr>
+                    <br>
+                    <p class="p1">Get enquires, reviews and offers available.</p>
+                    <p class="p2">Type the subject of your email in the box below.</p>
+                    <br>
+
+                    <form action="#" class="search-bar">
+                        <input type="text" placeholder="Enter your email subject">
+                        <button type="submit"><i class='bx bxs-envelope'></i></button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>    
+        
+        <div class="container footer-col2">
+            <hr>
+            <br>
+            <div class="bottom">
+                <p>© 2023 Vanilla FrontEnd developement Group for Sterling Bank. All rights reserved.</p>
+            </div>
+            <br>
+            <hr>
+        </div>
+    </footer>
+
+    <script src="/js/auctionstatus.js"></script>
+    <script src="/js/bidstatus.js" charset="utf-8"></script>
+    <script src="/js/script2.js"></script>
+    <script src="/js/timer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+
+</body>
+
+</html>

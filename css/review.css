@@ -87,6 +87,9 @@ a{
 }
 .reviews{
     color: #f9d71c;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .box-top{
     display: flex;
@@ -168,4 +171,24 @@ a{
 ::selection{
     color: #ffffff;
     background-color: #252525;
+}
+
+
+
+/* FIVE STAR */
+.reviews .progress .fas{
+    display: none;
+}
+
+.reviews .progress .far{
+    font-size: 18px;
+}
+
+.reviews .active .far{
+    display: none;
+}
+
+.reviews .active .fas{
+    font-size: 18px;
+    display: flex;
 }

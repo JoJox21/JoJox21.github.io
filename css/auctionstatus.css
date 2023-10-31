@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+/* @font-face {
+    font-family: pop;
+    src: url(./Fonts/Poppins-Medium.ttf);
+} */
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: pop;
+    flex-direction: column;
+}
+
+.head{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.head_1{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.head_1 span{
+    color: #c4103d;
+}
+
+.head_2{
+    font-size: 16px;
+    font-weight: 600;
+    /* color: #333; */
+    color: #fff;
+    margin-top: 3px;
+}
+
+.unordered-list{
+    display: flex;
+    margin-top: 80px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.unordered-list li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.unordered-list li .icon{
+    font-size: 35px;
+    color: #eeaebe;
+    margin: 0 60px;
+}
+
+.unordered-list li .text{
+    font-size: 14px;
+    font-weight: 600;
+    color: #eeaebe;
+}
+
+
+/* Progress Div Css  */
+
+
+.unordered-list li .progress{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(118, 117, 117, 0.781);
+    margin: 14px 0;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress::after{
+    content: " ";
+    position: absolute;
+    width: 125px;
+    height: 5px;
+    background-color: rgba(118, 117, 117, 0.781);
+    right: 30px;
+}
+
+.one::after{
+    width: 0;
+    height: 0;
+}
+
+.unordered-list li .progress .uil{
+    display: none;
+}
+
+.unordered-list li .progress p{
+    font-size: 13px;
+}
+
+
+/* Active CSS  */
+
+
+.unordered-list li .active{
+    background-color: #c4103d;
+    display: grid;
+    place-items: center;
+}
+
+li .active::after{
+    background-color: #c4103d;
+}
+
+.unordered-list li .active p{
+    display: none;
+}
+
+.unordered-list li .active .uil{
+    font-size: 20px;
+    display: flex;
+}
+
+/* .recent-bids{
+    margin-top: 20px;
+} */
+
+
+
+/* FOR LIST */
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 600px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-top: 0px;
+}
+
+.content-table thead tr{
+    background-color: rgb(95, 126, 116);
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: rgba(118, 117, 117, .15);
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid rgb(95, 126, 116);
+}
+
+.content-table tbody tr.active-row{
+    /* font-weight: bold; */
+    color: #eeaebe;
+}
+
+
+
+
+
+/* Responsive Css  */
+
+
+@media (max-width: 980px) {
+
+    .unordered-list{
+        flex-direction: column;
+    }
+
+    .unordered-list li{
+        flex-direction: row;
+    }
+
+    .unordered-list li .progress{
+        margin: 0 30px;
+    }
+
+    .progress::after{
+        width: 5px;
+        height: 55px;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+
+    .one::after{
+        height: 0;
+    }
+
+    .unordered-list li .icon{
+        margin: 15px 0;
+    }
+
+}
+
+
+@media (max-width:600px) {
+    .head .head_1{
+        font-size: 24px;
+    }
+
+    .head .head_2{
+        font-size: 16px;
+    }
+    .content-table{
+        width: 200px;
+    }
+
+}
+
+
+
+/* SEARCH BAR */
+.search-right{
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 22.5%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 100; */
+}
+.search-bar1 {
+    display: flex;
+    align-items: center;
+    border: 1.8px solid #e4e4e4;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+.search-bar1 input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 10px;
+    height: 25px;
+}
+.search-bar1 input::placeholder{
+    color: #e4e4e4;
+}
+.search-bar1 button {
+    width: 40px;
+    height: 25px;
+    background: transparent;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+.search-bar1 button i{
+    font-size: 18px;
+    color: rgb(243, 241, 241);
+}

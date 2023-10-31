@@ -34,11 +34,9 @@ ul {
     border-color: #bbbbbb;
 }
 .bottom {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     align-items: center;
-    /* padding-left: 80px;
-    padding-right: 100px; */
 }
 .bottom ul{
     display: flex;
@@ -59,6 +57,7 @@ ul {
 .bottom p{
     font-size: 15px;
     color: white;
+    text-align: center;
 }
 .footer-col h4 {
     font-size: 18px;

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Testimonial HTML</title>
+<title>Bidders Reviews</title>
 <!--style----->
 <link rel="stylesheet" href="/style.css"/>
 <link rel="stylesheet" href="/css/faq.css"/>
@@ -36,16 +36,16 @@
                 <li><a href="#" class="active">Pages +</a>
                     <ul>
                         <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Services +</a>
+                        <li><a href="#" class="active">Services +</a>
                             <ul>
-                                <li><a href="#">Auction Status</a></li>
-                                <li><a href="#">Review</a></li>
+                                <li><a href="/pages/auctionstatus.html">Auction Status</a></li>
+                                <li><a href="/pages/review.html" class="active">Review</a></li>
                                 <li><a href="#">Inspection</a></li>
                             </ul> 
                         </li>
                     </ul>
                 </li>
-                <li><a href="./faq.html">FAQs</a></li>
+                <li><a href="/pages/faq.html">FAQs</a></li>
                 <li><a href="#">Categories +</a>
                     <ul>
                         <li><a href="/pages/auction-page-all-items.html">All</a></li>
@@ -69,12 +69,34 @@
 
         <!-- Write Review -->
         <p>Write your review   <i class='bx bx-comment-detail'></i></p>
+        <!-- <div class="reviews">
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+        </div> -->
         <div class="reviews">
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i>
-            <i class="far fa-star"></i><!--Empty star-->
+            <div class="progress one">
+                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="progress two">
+                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="progress three">
+                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="progress four">
+                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="progress five">
+                <i class="far fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
         </div>
 
         <form action="#" class="review-bar">
@@ -238,9 +260,9 @@
                 </div>
             </div>
         </div>
+
     </section>
 
-        <!-- FOOTER -->
         <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-container">
@@ -255,15 +277,8 @@
                         <li><a href="#">Terms & Conditions</a></li>
                     </ul>
                     <br>
-                    <hr>
+                    <!-- <hr> -->
                     <br>
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
                 </div>
                 <div class="footer-col">
                     <h4>Get Help</h4>
@@ -297,10 +312,6 @@
             <hr>
             <br>
             <div class="bottom">
-                <!-- <ul>
-                    <li><a href="#">Accessibility</a></li>
-                    <li><a href="#">Cookies policy</a></li>
-                </ul> -->
                 <p>© 2023 Vanilla FrontEnd developement Group for Sterling Bank. All rights reserved.</p>
             </div>
             <br>
@@ -308,5 +319,8 @@
         </div>
 
     </footer>
+
+    <script src="/js/review.js"></script>
+    
 </body>
 </html>
