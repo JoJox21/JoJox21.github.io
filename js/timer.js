@@ -33,7 +33,7 @@ let a = setInterval(function(){
 // ===========================================================
 
 
-let deadline2 = new Date("Nov 14, 2023 10:22:00").getTime()
+let deadline2 = new Date("Nov 02, 2023 10:22:00").getTime()
 let b = setInterval(function(){
     let now = new Date().getTime();
 
@@ -59,7 +59,7 @@ let b = setInterval(function(){
     }
 }, 1000);
 
-let deadline3 = new Date("Oct 27, 2023 22:00:00").getTime()
+let deadline3 = new Date("Nov 03, 2023 22:00:00").getTime()
 let c = setInterval(function(){
     let now = new Date().getTime();
 
@@ -85,7 +85,7 @@ let c = setInterval(function(){
     }
 }, 1000);
 
-let deadline4 = new Date("Oct 30, 2023 12:34:00").getTime()
+let deadline4 = new Date("Nov 5, 2023 12:34:00").getTime()
 let d = setInterval(function(){
     let now = new Date().getTime();
 
@@ -111,7 +111,7 @@ let d = setInterval(function(){
     }
 }, 1000);
 
-let deadline5 = new Date("Dec 30, 2024 12:34:00").getTime()
+let deadline5 = new Date("Nov 10, 2023 23:34:00").getTime()
 let e = setInterval(function(){
     let now = new Date().getTime();
 
@@ -137,7 +137,7 @@ let e = setInterval(function(){
     }
 }, 1000);
 
-let deadline6 = new Date("Dec 30, 2023 01:00:00").getTime()
+let deadline6 = new Date("Oct 30, 2023 01:00:00").getTime()
 let f = setInterval(function(){
     let now = new Date().getTime();
 
@@ -163,7 +163,7 @@ let f = setInterval(function(){
     }
 }, 1000);
 
-let deadline7 = new Date("Nov 10, 2023 13:12:00").getTime()
+let deadline7 = new Date("Nov 10, 2023 13:22:00").getTime()
 let g = setInterval(function(){
     let now = new Date().getTime();
 
@@ -215,7 +215,7 @@ let h = setInterval(function(){
     }
 }, 1000);
 
-let deadline9 = new Date("Jan 01, 2024 05:34:00").getTime()
+let deadline9 = new Date("Nov 03, 2023 05:34:00").getTime()
 let x = setInterval(function(){
     let now = new Date().getTime();
 
@@ -241,7 +241,7 @@ let x = setInterval(function(){
     }
 }, 1000);
 
-let deadline10 = new Date("October 30, 2023 23:59:59").getTime()
+let deadline10 = new Date("Nov 03, 2023 12:59:59").getTime()
 let y = setInterval(function(){
     let now = new Date().getTime();
 

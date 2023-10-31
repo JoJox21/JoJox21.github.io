@@ -102,6 +102,10 @@ body{
     display: inline-flex;
   }
 
+  nav{
+    display:block;
+  }
+
   #check:checked~.icons #menu-icon {
     display: none;
   }
@@ -128,7 +132,7 @@ body{
   }
 
   #check:checked~.navbar {
-    height: 17.7rem; 
+    height: 25.5rem; 
   }
 
   .navbar a {

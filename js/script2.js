@@ -7,6 +7,7 @@ const input = document.querySelector('.input-field')
 const bid = document.querySelector('.bid_button')
 const resPrice = document.querySelector('.rprice')
 const newAmount = document.querySelector('.rprice2')
+const imgPage = document.querySelector('.slider')
 
 
 var bid_count = 0;
@@ -211,7 +212,7 @@ const Mikano = () =>{
 }
 
 let slider10 = document.querySelector('.mbenz2');
-let mBenz = ['gla1.png', 'gla2.png', 'gla3.png', 'gla4.png','gla5.png'];
+let mBenz = ['gla1.png', 'gla2.png', 'gla3.png', 'gla4.png', 'gla5.png', 'gla6.png'];
 let r = 0;
 
 const next10 = () =>{
@@ -260,6 +261,7 @@ const update = () => {
           title: 'Oops...',
           text: 'Your bid amount is lower than the current bid!'
         })
+        input.value = ""
     }
     else if (inputValue == intMyPrice) {
         //  Swal.fire({
@@ -274,6 +276,7 @@ const update = () => {
           title: 'Oops...',
           text: 'Your bid amount must be higher than the current bid!'
         })
+        input.value = ""
     }
 
     else {      
@@ -314,4 +317,13 @@ bid.addEventListener('click', update)
 input.addEventListener('input', function () {
   const inputValue = input.value.replace(/\D/g, "")
   input.value = inputValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+})
+
+slider.addEventListener('onmouseover', function() {
+    const rightBtn = document.querySelector('.fa-chevron-right')
+    const leftBtn = document.querySelector('.fa-chevron-left')
+
+        rightBtn.classList.remove('chev')
+        // leftBtn.display.style = none
+
 })

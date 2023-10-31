@@ -65,7 +65,7 @@ const setError = (element, message) =>{
 
         setTimeout(function () {
             errorMsg.classList.remove("shaking");
-        }, 2000);
+        }, 500);
 
     }
     
