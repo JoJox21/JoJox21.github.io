@@ -247,6 +247,7 @@ const update = () => {
             showConfirmButton: false,
             timer: 1500
           })
+          input.style.border = '5px solid red'
 }
     else if (inputValue < intMyPrice){
         //  Swal.fire({
@@ -262,6 +263,7 @@ const update = () => {
           text: 'Your bid amount is lower than the current bid!'
         })
         input.value = ""
+        input.style.border = '2px solid black'
     }
     else if (inputValue == intMyPrice) {
         //  Swal.fire({
@@ -277,6 +279,7 @@ const update = () => {
           text: 'Your bid amount must be higher than the current bid!'
         })
         input.value = ""
+        input.style.border = '2px solid black'
     }
 
     else {      
@@ -285,6 +288,7 @@ const update = () => {
           title: 'Thank you',
           text: 'Your bid has been successfully placed.',
         })
+        input.style.border = 'none'
           // ============================================================
           // ======================BID COUNT=============================
           // ============================================================
