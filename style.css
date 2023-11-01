@@ -89,11 +89,23 @@ body{
   display: none;
 }
 
+.Hub_logo{
+  width: 110px;
+  height: 95px;
+  position: absolute;
+  top: 40px;
+  right: 45px;
+
+}
+
 /* BREAKPOINTS */
 
 @media (max-width: 992px) {
   .header {
     padding: 1.3rem 5%;
+  }
+  .Hub_logo{
+    display: none;
   }
 }
 
